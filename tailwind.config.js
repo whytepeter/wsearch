@@ -10,7 +10,7 @@ module.exports = {
         "1/4": "25%",
         "1/2": "50%",
         "3/4": "75%",
-        full: "100%"
+        full: "100%",
       },
       maxWidth: {
         0: "0",
@@ -21,7 +21,7 @@ module.exports = {
         "1/4": "25%",
         "1/2": "50%",
         "3/4": "75%",
-        full: "100%"
+        full: "100%",
       },
 
       colors: {
@@ -29,14 +29,14 @@ module.exports = {
         secondary: "#313131",
         hoverp: "#29CC87",
         hovers: "#454545",
-        lite: "#D6FFE9"
+        lite: "#D6FFE9",
       },
       spacing: {
         72: "18rem",
         84: "21rem",
-        96: "24rem"
-      }
-    }
+        96: "24rem",
+      },
+    },
   },
   variants: [
     "responsive",
@@ -50,8 +50,8 @@ module.exports = {
     "focus",
     "active",
     "visited",
-    "disabled"
+    "disabled",
   ],
 
-  plugins: []
+  plugins: [],
 }

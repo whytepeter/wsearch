@@ -2,11 +2,11 @@
   <div
     v-if="isOverlay"
     @click="hideNav"
-    class="transition-opacity  opacity-0 w-full h-full inset-0 fixed bg-black opacity-25 z-10"
+    class="transition-opacity opacity-0 w-full h-full inset-0 fixed bg-black opacity-25 z-40"
   ></div>
 </template>
 <script>
-import { mapMutations, mapGetters } from "vuex"
+import { mapMutations, mapGetters } from "vuex";
 export default {
   methods: {
     ...mapMutations(["hideNav"])
@@ -14,5 +14,5 @@ export default {
   computed: {
     ...mapGetters(["isOverlay"])
   }
-}
+};
 </script>

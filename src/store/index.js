@@ -15,30 +15,54 @@ export default new Vuex.Store({
         id: 1,
         bank: "/img/banks/access.png",
         accountName: "Peter Emmanuel Whyte",
-        accountNumber: "0805915974"
+        accountNumber: "0805915974",
       },
       {
         id: 2,
         bank: "/img/banks/zenith.png",
         accountName: "Emmanuel Whyte Peter",
-        accountNumber: "2121340638"
+        accountNumber: "2121340638",
       },
       {
         id: 3,
-        bank: "/img/banks/gtb.png",
+        bank: "/img/banks/diamond.png",
         accountName: "Whyte Peter",
-        accountNumber: "0429832896"
+        accountNumber: "0429832896",
       },
       {
         id: 4,
         bank: "/img/banks/gtb.png",
         accountName: "Whyte Peter",
-        accountNumber: "0429832896"
-      }
-    ]
+        accountNumber: "0429832896",
+      },
+      {
+        id: 3,
+        bank: "/img/banks/eco.png",
+        accountName: "Whyte Peter",
+        accountNumber: "0429832896",
+      },
+      {
+        id: 4,
+        bank: "/img/banks/wema.png",
+        accountName: "Whyte Peter",
+        accountNumber: "0429832896",
+      },
+      {
+        id: 3,
+        bank: "/img/banks/fcmb.png",
+        accountName: "Whyte Peter",
+        accountNumber: "0429832896",
+      },
+      {
+        id: 4,
+        bank: "/img/banks/first.png",
+        accountName: "Whyte Peter",
+        accountNumber: "0429832896",
+      },
+    ],
   },
   getters,
   mutations,
   actions,
-  modules: {}
+  modules: {},
 })

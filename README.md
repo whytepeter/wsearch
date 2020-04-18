@@ -1,24 +1,11 @@
 # wsearch-v0
 
-## Project setup
-```
-npm install
-```
+## Project overview
 
-### Compiles and hot-reloads for development
 ```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
+A POS Web App for storing users account details
 ```
 
 ### Customize configuration
+
 See [Configuration Reference](https://cli.vuejs.org/config/).

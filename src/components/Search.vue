@@ -1,6 +1,6 @@
 <template>
   <div
-    class=" transition duration-300 w-10/12 flex justify-between items-center flex-no-wrap mx-auto text-base text-gray-600  bg-gray-100 rounded-full border sm:border-2 border-gray-400 overflow-hidden focus-within:border-primary"
+    class="transition duration-300 w-10/12 flex justify-between items-center flex-no-wrap mx-auto text-base text-gray-600 bg-gray-100 rounded-full border sm:border-2 border-gray-400 overflow-hidden focus-within:border-primary z-20"
   >
     <input
       type="text"
@@ -17,5 +17,5 @@
 <script>
 export default {
   name: "search"
-}
+};
 </script>

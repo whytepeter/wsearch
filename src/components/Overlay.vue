@@ -1,9 +1,11 @@
 <template>
-  <div
-    v-if="isOverlay"
-    @click="hideNav"
-    class="transition-opacity opacity-0 w-full h-full inset-0 fixed bg-black opacity-25 z-40"
-  ></div>
+  <transition
+    :duration="500"
+    enter-active-class="animated fadeIn"
+    leave-active-class="animated fadeOut"
+  >
+    <div v-if="isOverlay" class="transition-opacity overlay w-full h-full inset-0 fixed z-40"></div>
+  </transition>
 </template>
 <script>
 import { mapMutations, mapGetters } from "vuex";
@@ -16,3 +18,4 @@ export default {
   }
 };
 </script>
+

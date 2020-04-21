@@ -2,8 +2,24 @@
 
 @tailwind components;
 
+.form-container {
+  @apply w-72  flex flex-col items-center text-gray-600 font-semibold py-4 px-6 bg-white shadow-xl rounded-lg;
+}
+
+.input {
+  @apply transition duration-300 bg-gray-200 px-4 py-3  font-semibold rounded-md;
+}
+
+.input:focus {
+  @apply outline-none;
+}
+
 .btn {
-  @apply font-bold py-2 px-4 rounded;
+  @apply transition duration-300 font-semibold py-2 px-4 rounded;
+}
+
+.btn:focus {
+  @apply outline-none;
 }
 
 .btn-primary {
@@ -16,10 +32,21 @@
 .btn-secondary {
   @apply bg-secondary text-white;
 }
-.btn-gray:hover {
-  @apply bg-hovers;
-}
+
 .separator {
   @apply mx-auto w-10/12 h-1 border-b-2 border-gray-300;
 }
+
+.art {
+  @apply h-1 w-2/12 bg-gray-400 rounded-full;
+}
+
+.bank-list {
+  @apply transition duration-300 py-1 px-6  cursor-pointer;
+}
+
+.bank-list:hover {
+  @apply bg-gray-200;
+}
+
 @tailwind utilities;

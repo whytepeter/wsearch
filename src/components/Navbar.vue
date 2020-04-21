@@ -8,9 +8,9 @@
     >
       <i class="fas fa-bars"></i>
     </span>
-    <div class="w-32 cursor-pointer" route to="/">
+    <router-link to="/" class="w-32 cursor-pointer">
       <img src="/logo-text.png" alt="wsearch" class="w-full" />
-    </div>
+    </router-link>
   </div>
 </template>
 

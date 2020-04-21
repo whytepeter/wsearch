@@ -5,6 +5,7 @@ module.exports = {
         0: "0",
         16: "3rem",
         18: "4rem",
+        19: "4.5rem",
         20: "5rem",
         24: "6rem",
         "1/4": "25%",
@@ -16,6 +17,7 @@ module.exports = {
         0: "0",
         16: "3rem",
         18: "4rem",
+        19: "4.5rem",
         20: "5rem",
         24: "6rem",
         "1/4": "25%",
@@ -32,6 +34,7 @@ module.exports = {
         lite: "#D6FFE9",
       },
       spacing: {
+        18: "4.5rem",
         72: "18rem",
         84: "21rem",
         96: "24rem",

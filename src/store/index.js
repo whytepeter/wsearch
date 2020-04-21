@@ -8,7 +8,9 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    active: false,
+    login: true,
+    sideNav: false,
+    openAddForm: false,
     overlay: false,
     accounts: [
       {
@@ -36,25 +38,25 @@ export default new Vuex.Store({
         accountNumber: "0429832896",
       },
       {
-        id: 3,
+        id: 5,
         bank: "/img/banks/eco.png",
         accountName: "Whyte Peter",
         accountNumber: "0429832896",
       },
       {
-        id: 4,
+        id: 6,
         bank: "/img/banks/wema.png",
         accountName: "Whyte Peter",
         accountNumber: "0429832896",
       },
       {
-        id: 3,
+        id: 7,
         bank: "/img/banks/fcmb.png",
         accountName: "Whyte Peter",
         accountNumber: "0429832896",
       },
       {
-        id: 4,
+        id: 8,
         bank: "/img/banks/first.png",
         accountName: "Whyte Peter",
         accountNumber: "0429832896",

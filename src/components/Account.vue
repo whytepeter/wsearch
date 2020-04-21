@@ -1,8 +1,8 @@
 <template>
   <div
-    class="Account box-border w-full flex justify-between items-center text-gray-700 font-medium py-2 px-2 sm:px-4 mx-auto sm:w-11/12 odd:bg-gray-200 border-b border-gray-200"
+    class="Account box-border w-full flex justify-between items-center text-gray-700 font-medium py-2 px-2 pl-3 sm:px-4 mx-auto sm:w-11/12 odd:bg-gray-200 border-b border-gray-200"
   >
-    <div class="bank box-border max-w-20 rounded-sm overflow-hidden">
+    <div class="bank box-border max-w-20 min-w-19 sm:w-24 rounded overflow-hidden">
       <img :src="account.bank" class="w-full object-cover" />
     </div>
     <div
@@ -16,14 +16,14 @@
     <div class="options relative flex justify-between items-center flex-no-wrap">
       <span
         @click="isOption = !isOption"
-        class="option transition duration-300 block sm:hidden cursor-pointer transform active:scale-110 py-2 px-4 hover:bg-gray-300 rounded-full focus:outline-none"
+        class="option transition duration-300 block sm:hidden cursor-pointer transform active:scale-110 py-2 px-4 -ml-1 hover:bg-gray-300 rounded-full focus:outline-none"
       >
         <i class="fas fa-ellipsis-v"></i>
       </span>
       <div @click="isOption = false" v-if="isOption" class="fixed inset-0 bg-transparent"></div>
       <div
         :class="[isOption ? show : hide]"
-        class="Edit transition-all duration-300 ease-in-out w-auto sm:visible top-0 left-0 -ml-16 sm:ml-0 rounded-md sm:rounded-none shadow-md sm:shadow-none flex flex-col absolute bg-white sm:bg-transparent sm:relative sm:flex-row overflow-hidden"
+        class="Edit transition-all duration-300 ease-in-out w-auto sm:visible top-0 left-0 -ml-18 sm:ml-0 rounded-md sm:rounded-none shadow-md sm:shadow-none flex flex-col absolute bg-white sm:bg-transparent sm:relative sm:flex-row overflow-hidden z-10"
       >
         <div
           @click="isOption = false"

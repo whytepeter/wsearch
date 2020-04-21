@@ -1,9 +1,25 @@
-export const showNav = state => {
+export const showNav = (state) => {
   state.overlay = true
-  state.active = true
+  state.sideNav = true
 }
 
-export const hideNav = state => {
+export const hideNav = (state) => {
   state.overlay = false
-  state.active = false
+  state.sideNav = false
+}
+
+export const showAddForm = (state) => {
+  state.overlay = true
+  state.openAddForm = true
+}
+export const closeAddForm = (state) => {
+  state.overlay = false
+  setTimeout(() => {
+    state.openAddForm = false
+  }, 1000)
+}
+
+export const logout = (state) => {
+  state.overlay = false
+  state.login = false
 }

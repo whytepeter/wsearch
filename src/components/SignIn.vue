@@ -12,7 +12,7 @@
       <input
         type="text"
         placeholder="Email"
-        class="w-full px-3 py-2 rounded border-2 border-gray-300 font-medium placeholder-gray-600 text-gray-600 focus:outline-none"
+        class="w-full px-3 py-2 rounded border-2 border-gray-300 font-medium placeholder-gray-600 text-gray-700 focus:outline-none"
       />
     </div>
     <div
@@ -24,7 +24,7 @@
       <input
         :type="[isLock ? type1 : type2]"
         placeholder="Password"
-        class="w-full px-3 py-2 rounded border-2 border-gray-300 font-medium placeholder-gray-600 text-gray-600 focus:outline-none"
+        class="w-full px-3 py-2 rounded border-2 border-gray-300 font-medium placeholder-gray-600 text-gray-700 focus:outline-none"
       />
     </div>
 
@@ -45,10 +45,7 @@
       By Signing up, you agree to our
       <span
         class="transition duration-300 mb-6 font-medium cursor-pointer text-green-200 hover:underline"
-      >Privary Policy</span> and
-      <span
-        class="transition duration-300 mb-6 font-medium cursor-pointer text-green-200 hover:underline"
-      >Terms of Use.</span>
+      >Privary Policy</span>
     </div>
   </div>
 </template>

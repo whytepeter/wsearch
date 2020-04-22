@@ -80,11 +80,12 @@ export default {
     ...mapMutations(["closeAddForm"]),
     closeForm() {
       this.fade = "animated fadeOutDown";
-      this.closeAddForm();
+      this.animateIn = "animated fadeOut";
       setTimeout(() => {
         this.fade = "animated fadeInDown";
-        this.animateIn = "animated fadeOut";
+        this.animateIn = "animated fadeIn";
       }, 1000);
+      this.closeAddForm();
     }
   },
   computed: {

@@ -14,3 +14,7 @@ export const isAddAccount = (state) => {
 export const isLogin = (state) => {
   return state.login
 }
+
+export const show = (state) => {
+  return state.show
+}

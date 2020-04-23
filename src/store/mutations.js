@@ -23,3 +23,10 @@ export const logout = (state) => {
   state.overlay = false
   state.login = false
 }
+
+export const showSignIn = (state) => {
+  state.show = "app-sign-in"
+}
+export const showSignUp = (state) => {
+  state.show = "app-sign-up"
+}

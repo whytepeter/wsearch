@@ -8,6 +8,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    show: "app-sign-in",
     login: true,
     sideNav: false,
     openAddForm: false,

@@ -2,12 +2,15 @@
   <div
     class="container-full py-6 flex items-center justify-center h-screen text-2xl text-white bg-primary"
   >
-    <app-sign-in />
+    <keep-alive>
+      <component :is="show"></component>
+    </keep-alive>
   </div>
 </template>
 <script>
+import { mapGetters } from "vuex";
 import SignIn from "../components/SignIn";
-// import SignUp from "../components/SignUp";
+import SignUp from "../components/SignUp";
 export default {
   data() {
     return {
@@ -15,8 +18,11 @@ export default {
     };
   },
   components: {
-    appSignIn: SignIn
-    // appSignUp: SignUp
+    appSignIn: SignIn,
+    appSignUp: SignUp
+  },
+  computed: {
+    ...mapGetters(["show"])
   }
 };
 </script>

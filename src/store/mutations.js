@@ -30,3 +30,6 @@ export const showSignIn = (state) => {
 export const showSignUp = (state) => {
   state.show = "app-sign-up"
 }
+export const showReset = (state) => {
+  state.show = "app-reset-password"
+}

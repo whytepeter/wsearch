@@ -1,7 +1,11 @@
 <template>
   <form class="SigIn form-container text-base w-84 bg-transparent shadow-none">
     <div class="logo w-40 mb-4">
-      <img src="/logo-text.png" alt="wsearch logo" class="w-full object-contain" />
+      <img
+        src="/logo-text.png"
+        alt="wsearch logo"
+        class="w-full object-contain"
+      />
     </div>
     <div
       class="Email w-full text-secondary flex items-center justify-between mb-4 bg-gray-300 shadow focus-within:shadow-lg rounded"
@@ -36,45 +40,55 @@
 
     <button
       class="btn btn-secondary mb-4 w-full font-medium text-gray-700 hover:text-gray-600 hover:shadow-lg shadow"
-    >login</button>
+    >
+      login
+    </button>
     <span
+      @click="switchReset"
       class="Forgot-Password cursor-pointer mb-2 mr-2 text-sm text-green-200 font-medium hover:underline"
-    >Forgot Passowrd</span>
+      >Forgot Passowrd</span
+    >
     <div class="text-center text-secondary text-sm">
       New to Wsearch?
       <span
         @click="switchSignUp"
         class="transition duration-300 font-medium cursor-pointer text-green-200 hover:underline"
-      >Sign Up</span>
+        >Sign Up</span
+      >
     </div>
   </form>
 </template>
 <script>
-import { mapMutations } from "vuex";
+import { mapMutations } from "vuex"
 export default {
   name: "SignIn",
   data() {
     return {
       signIn: {
         email: "",
-        passowrd: ""
+        passowrd: "",
       },
 
       isLock: true,
       type1: "password",
       type2: "text",
       lock: "fas fa-lock",
-      unlock: "fas fa-unlock"
-    };
+      unlock: "fas fa-unlock",
+    }
   },
   methods: {
-    ...mapMutations(["showSignUp"]),
+    ...mapMutations(["showSignUp", "showReset"]),
 
     switchSignUp() {
-      this.signIn.email = "";
-      this.signIn.password = "";
-      this.showSignUp();
-    }
-  }
-};
+      this.signIn.email = ""
+      this.signIn.password = ""
+      this.showSignUp()
+    },
+    switchReset() {
+      this.signIn.email = ""
+      this.signIn.password = ""
+      this.showReset()
+    },
+  },
+}
 </script>

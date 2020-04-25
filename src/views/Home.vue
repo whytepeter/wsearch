@@ -14,6 +14,7 @@
       >+</button>
     </div>
 
+    <app-alert-normal mode="danger">Account added successful</app-alert-normal>
     <app-add-account />
   </div>
 </template>
@@ -24,13 +25,15 @@ import Search from "../components/Search";
 import SearchDisplay from "../components/SearchDisplay";
 import AddAccount from "../components/AddAccount";
 import AccountList from "../components/AccountList";
+import AlertNormal from "../components/AlertNormal";
 export default {
   name: "Home",
   components: {
     appSearch: Search,
     appSearchDisplay: SearchDisplay,
     appAddAccount: AddAccount,
-    appAccountList: AccountList
+    appAccountList: AccountList,
+    appAlertNormal: AlertNormal
   },
   methods: {
     ...mapMutations(["showAddForm"])

@@ -9,15 +9,17 @@
 </template>
 <script>
 import { mapGetters } from "vuex";
+import ResetPassword from "../components/ResetPassword";
 import SignIn from "../components/SignIn";
 import SignUp from "../components/SignUp";
 export default {
   data() {
     return {
-      component: "appSignIn"
+      component: ""
     };
   },
   components: {
+    appResetPassword: ResetPassword,
     appSignIn: SignIn,
     appSignUp: SignUp
   },
